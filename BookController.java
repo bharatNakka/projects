@@ -28,6 +28,7 @@ public class BookController {
 	@GetMapping("/book-by-id{id}")
 	public Book getBookById(@PathVariable("id") int bookid) {
 		return bookService.getById(bookid);
+		//new
 	}
 	//http://localhost:8080/book-restapi/books-by-author/Kathy
 	@GetMapping("/books-by-author/{author}")
